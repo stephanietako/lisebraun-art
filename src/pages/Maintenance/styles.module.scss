@@ -1,22 +1,54 @@
 .maintenance {
   display: flex;
-  justify-content: center;
+  width: 100%;
   align-items: center;
-  text-align: center;
+  height: 100%;
+  padding: 5rem;
 
-  div {
-    margin-top: 15%;
-    :nth-child(2) {
-      font-size: 18px;
+  .__container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: block;
+    border: 4px solid #000;
+    height: 59rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.75);
+    flex-direction: column;
+
+    .__image {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      z-index: -1;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: 100% 74%;
+      }
     }
-
-    p {
-      color: #000;
-      margin-top: 10px;
+    .__txt {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 20px;
+      text-align: center;
+      p {
+        margin-top: 10px;
+        margin-top: 10px;
+        font-size: 30px;
+        z-index: 2;
+        color: #000;
+      }
     }
-  }
-
-  div > img {
-    width: 200px;
   }
 }

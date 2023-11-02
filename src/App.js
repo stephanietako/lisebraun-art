@@ -5,20 +5,25 @@ import Maintenance from "./pages/Maintenance";
 // Styles
 import "./App.scss";
 
-const maintenanceMode = process.env.REACT_APP_MODE_MAINTENANCE;
-
-const App = () => (
-  <div className="App">
-    <Router>
-      <Routes>
-        {maintenanceMode && JSON.parse(maintenanceMode) ? (
-          <Route path="/" element={<Maintenance />} />
-        ) : (
-          <Route path="/" element={<Home />} />
-        )}
-      </Routes>
-    </Router>
-  </div>
-);
+const App = () => {
+  return (
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              JSON.parse(process.env.REACT_APP_MODE_MAINTENANCE) ? (
+                <Maintenance />
+              ) : (
+                <Home />
+              )
+            }
+          />
+        </Routes>
+      </Router>
+    </div>
+  );
+};
 
 export default App;
