@@ -1,7 +1,7 @@
 // Styles
 import styles from "./styles.module.scss";
 // Assets
-import image from "../../assets/images/boueeHoriz.jpg";
+import image from "../../assets/images/boueeHoriz.webp";
 const Maintenance = () => {
   return (
     <div className={styles.maintenance}>
