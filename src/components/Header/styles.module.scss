@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  .__container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: skyblue;
+    border: 3px solid red;
+    z-index: 3;
+
+    .__list_header {
+      display: flex;
+      border: 2px solid blue;
+      width: 70%;
+      height: auto;
+      align-items: center;
+      li {
+        font-size: 35px;
+        text-decoration: none;
+        list-style-type: none;
+        color: #fff;
+        cursor: pointer;
+        padding: 33px;
+      }
+    }
+    .__insta_link {
+      display: flex;
+      width: auto;
+      height: auto;
+      align-items: center;
+      padding: 33px;
+      p {
+        font-size: 35px;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+  }
+}
