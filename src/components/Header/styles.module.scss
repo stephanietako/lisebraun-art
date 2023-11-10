@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
   height: auto;
+  text-transform: capitalize;
 
   .__container {
     display: flex;
@@ -34,12 +35,14 @@
       height: auto;
       align-items: center;
       padding: 33px;
+      margin: auto;
       p {
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
         justify-content: center;
-        font-family: "Georama", sans-serif;
+        font-family: "Poppins", sans-serif;
         font-style: normal;
+        font-weight: bolder;
       }
     }
   }
