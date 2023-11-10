@@ -19,7 +19,6 @@ const Home = () => {
           </div>
         </div>
         <div className={styles.__section}>
-          <div className={styles.__event}></div>
           <div className={styles.__box}>
             <div className={styles.__box_content}>
               <div className={styles.__gif}>

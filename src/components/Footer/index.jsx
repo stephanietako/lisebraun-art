@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 // Assets
 import logo from "../../assets/logo/logolb.png";
+import KeepInTouch from "../KeepInTouch";
 
 const Footer = () => {
   const date = new Date();
@@ -30,6 +31,9 @@ const Footer = () => {
             </div>
           </li>
         </ul>
+        <div className={styles.__keepintch}>
+          <KeepInTouch />
+        </div>
       </footer>
     </div>
   );
