@@ -12,7 +12,6 @@ const AnimCircle = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    // Définissez la largeur et la hauteur du canvas pour qu'il remplisse l'écran
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 

@@ -8,17 +8,19 @@ import AnimCircle from "../../components/AnimCircle";
 
 const Home = () => {
   return (
-    <div className={styles.home}>
-      <AnimCircle />
-      <div className={styles.__container}>
-        <div className={styles.__image}>
-          <img src={image} alt="woman on buoy in the swimming pool" />
+    <>
+      <div className={styles.home}>
+        <Header />
+        <div className={styles.__container}>
+          <AnimCircle />
+          <div className={styles.__image}>
+            <img src={image} alt="woman on buoy in the swimming pool" />
+          </div>
         </div>
+        <div className={styles.__section}></div>
+        <Footer />
       </div>
-      <Header />
-      <div className={styles.__section}></div>
-      <Footer />
-    </div>
+    </>
   );
 };
 
