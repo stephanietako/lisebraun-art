@@ -6,6 +6,7 @@ import gif from "../../assets/gif/aqua.gif";
 // Styles
 import styles from "./styles.module.scss";
 import AnimCircle from "../../components/AnimCircle";
+import Formulaire from "../../components/Formulaire";
 
 const Home = () => {
   return (
@@ -30,7 +31,9 @@ const Home = () => {
                 products, build a collection based on encounters, projects
                 stories of human beings."
               </p>
-              <div className={styles.__form_contact}>FORMULAIRE</div>
+              <div className={styles.__form_contact}>
+                <Formulaire />
+              </div>
             </div>
           </div>
         </div>
