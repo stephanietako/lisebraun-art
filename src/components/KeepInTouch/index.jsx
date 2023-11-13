@@ -1,8 +1,4 @@
 import { useState } from "react";
-// import DOMPurify from "dompurify";
-// import fetch from "node-fetch";
-// import { toast, ToastContainer, Zoom } from "../Toasts";
-
 import styles from "./styles.module.scss";
 
 const InputField = ({ name, label, value, onChange, error }) => {
