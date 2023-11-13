@@ -39,15 +39,17 @@
       display: flex;
       width: 100%;
       height: auto;
-      position: relative;
+      border: 3px solid red;
+      position: absolute;
+      z-index: 2;
 
       .__box_content {
-        height: auto;
-        right: 0;
-        position: absolute;
-        z-index: 2;
-        margin-left: 84rem;
-        width: auto;
+        width: 30%;
+        border: 4px solid blue;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
 
         p {
           color: #fff;
@@ -56,20 +58,21 @@
         }
 
         .__gif {
-          padding: 2rem;
           justify-content: center;
           display: flex;
+          width: 100%;
+          height: auto;
 
           img {
-            width: 86%;
+            width: 27rem;
             height: auto;
             border-radius: 64px;
           }
         }
         .__form_contact {
-          display: block;
+          display: flex;
           width: 100%;
-          height: 20rem;
+          height: auto;
           color: #fff;
         }
       }

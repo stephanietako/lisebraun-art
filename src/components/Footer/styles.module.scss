@@ -1,32 +1,19 @@
 .footer {
   display: flex;
-  bottom: 0;
   width: 100%;
   height: 100%;
   z-index: 3;
 
-  .__container {
+  footer {
     display: flex;
     align-items: center;
-    bottom: 0;
     color: #fff;
     height: auto;
-    width: 70%;
+    width: 100%;
     flex-wrap: wrap;
     position: absolute;
-
-    .__logo {
-      width: auto;
-      max-height: 3rem;
-    }
-
-    .__copyright {
-      display: flex;
-      flex-wrap: wrap;
-      color: #fff;
-      font-size: 14px;
-      width: 100%;
-    }
+    bottom: 0;
+    border: 3px solid yellow;
 
     ul {
       display: flex;
@@ -34,12 +21,18 @@
       text-decoration: none;
       list-style-type: none;
       height: auto;
-      width: auto;
+      width: 50%;
+      border: 4px solid fuchsia;
 
       li {
         padding: 8px;
         font-size: small;
+        border: 3px solid turquoise;
 
+        .__logo {
+          width: auto;
+          max-height: 3rem;
+        }
         a {
           color: #fff;
           font-size: 12px;
@@ -51,17 +44,13 @@
     }
     .__keepintch {
       display: flex;
-      width: 57%;
+      width: 50%;
       height: auto;
+      padding: 2rem;
     }
   }
-  span {
-    display: flex;
-    width: 50%;
-    height: auto;
-    padding: 3rem;
-  }
 }
+
 //////////////////////// RESPONSIVE ///////////////////////////////
 @media only screen and (max-width: 768px) {
   .footer {

@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <div className={styles.footer}>
-      <footer className={styles.__container}>
+      <footer>
         <ul>
           <li>
             <a href="#welcome">
