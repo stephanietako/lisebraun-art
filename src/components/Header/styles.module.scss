@@ -33,15 +33,18 @@
       width: auto;
       height: auto;
       align-items: center;
-      padding: 33px;
-      margin: auto;
+      width: 100%;
+      justify-content: flex-end;
+      border: 3px solid turquoise;
+
       p {
-        font-size: 30px;
+        font-size: 35px;
         text-align: center;
         justify-content: center;
         font-family: "Poppins", sans-serif;
         font-style: normal;
         font-weight: bolder;
+        padding: 2rem;
       }
     }
   }

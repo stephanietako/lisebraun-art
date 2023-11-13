@@ -1,12 +1,14 @@
+import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Formulaire from "../../components/Formulaire";
+
+import AnimCircle from "../../components/AnimCircle";
 // Assets
 import image from "../../assets/images/boueeHoriz.webp";
 import gif from "../../assets/gif/aqua.gif";
 // Styles
 import styles from "./styles.module.scss";
-import AnimCircle from "../../components/AnimCircle";
-import Formulaire from "../../components/Formulaire";
 
 const Home = () => {
   return (
@@ -37,7 +39,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         <Footer />
       </div>
     </>

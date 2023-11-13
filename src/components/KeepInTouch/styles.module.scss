@@ -17,6 +17,11 @@
       margin-top: 0.5rem;
     }
 
+    label {
+      color: #fff;
+      font-size: 2rem;
+    }
+
     input {
       border: none;
       border-bottom: 0.1rem solid #e6e6e6;
@@ -30,11 +35,6 @@
         color: #fff;
         font-size: 2rem;
       }
-    }
-
-    label {
-      color: #fff;
-      font-size: 2rem;
     }
 
     textarea {
