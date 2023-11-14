@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: flex-end;
+
+  .__arrow_modalBbtn {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    height: auto;
+    width: auto;
+    img {
+      width: 43px;
+      height: auto;
+      object-fit: contain;
+    }
+    &:hover {
+      color: #dcdcdc;
+      transform: scale(1.2);
+    }
+  }
+}
