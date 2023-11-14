@@ -1,9 +1,8 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Formulaire from "../../components/Formulaire";
-
 import AnimCircle from "../../components/AnimCircle";
+import Button from "../../components/Button";
 // Assets
 import image from "../../assets/images/boueeHoriz.webp";
 import gif from "../../assets/gif/aqua.gif";
@@ -27,19 +26,29 @@ const Home = () => {
               <div className={styles.__gif}>
                 <img src={gif} alt="event aqua art miami " />
               </div>
-              <p>
-                "I want to continue promoting arts and special pieces
-                internationaly, meet a growing demand for hight quality and rare
-                products, build a collection based on encounters, projects
-                stories of human beings."
-              </p>
+              <div className={styles.__txt}>
+                <p>
+                  "I want to continue promoting arts and special pieces
+                  internationaly, meet a growing demand for hight quality and
+                  rare products, build a collection based on encounters,
+                  projects stories of human beings."
+                </p>
+              </div>
               <div className={styles.__form_contact}>
-                <Formulaire />
+                <span id={styles.__title}>
+                  <p>Contact</p>
+                </span>
+                <span id={styles.__txt}>
+                  <p>Drop a message</p>
+                  <Button />
+                </span>
               </div>
             </div>
           </div>
         </div>
-        <Footer />
+        <div className={styles.__footer}>
+          <Footer />
+        </div>
       </div>
     </>
   );

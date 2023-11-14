@@ -10,7 +10,6 @@
     height: auto;
     background-color: transparent;
     z-index: 4;
-    padding: 2rem;
 
     .__list_header {
       display: flex;
@@ -25,6 +24,9 @@
         color: #fff;
         cursor: pointer;
         padding: 33px;
+        &:hover {
+          color: #000;
+        }
       }
     }
 
@@ -35,7 +37,6 @@
       align-items: center;
       width: 100%;
       justify-content: flex-end;
-      border: 3px solid turquoise;
 
       p {
         font-size: 35px;
@@ -45,6 +46,10 @@
         font-style: normal;
         font-weight: bolder;
         padding: 2rem;
+        color: #fff;
+        &:hover {
+          color: #000;
+        }
       }
     }
   }

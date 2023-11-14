@@ -11,7 +11,7 @@ const InputField = ({ name, label, value, onChange, error }) => {
         name={name}
         value={value}
         onChange={onChange}
-        placeholder={`Ton ${label.toLowerCase()} ici`}
+        placeholder={`Your ${label.toLowerCase()} here`}
       />
       {error && <div className={styles.error}>{error}</div>}
     </div>

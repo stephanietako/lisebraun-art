@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 // Styles
 import styles from "./styles.module.scss";
 // Assets
-import logo from "../../assets/logo/logolb.png";
+import logo from "../../assets/logo/galerielisebraun.png";
 import KeepInTouch from "../KeepInTouch";
 
 const Footer = () => {

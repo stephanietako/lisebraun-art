@@ -39,20 +39,26 @@
       display: flex;
       width: 100%;
       height: auto;
-      border: 3px solid red;
       position: absolute;
 
       .__box_content {
         width: 30%;
-        border: 4px solid blue;
         display: flex;
         flex-direction: column;
         margin-left: auto;
-        z-index: 4;
-        p {
-          color: #fff;
-          font-size: 22px;
-          padding: 4rem;
+        padding: 2rem;
+
+        .__txt {
+          width: 75%;
+          display: flex;
+          margin-left: auto;
+          z-index: 4;
+          p {
+            font-size: 22px;
+            padding: 1rem;
+            line-height: 1.2;
+            color: #fff;
+          }
         }
 
         .__gif {
@@ -60,20 +66,59 @@
           display: flex;
           width: 100%;
           height: auto;
-
+          z-index: 4;
           img {
-            width: 27rem;
+            max-width: 93%;
             height: auto;
             border-radius: 64px;
           }
         }
         .__form_contact {
           display: flex;
-          width: 100%;
+          width: 75%;
           height: auto;
-          color: #fff;
+          color: #000;
+          background: #dcdcdc;
+          border: 1px solid gray;
+          border-radius: 57px;
+          flex-direction: column;
+          padding: 2rem;
+          margin-left: auto;
+          z-index: 4;
+          line-height: 1.5;
+          #__title {
+            p {
+              justify-content: center;
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-size: 24px;
+              letter-spacing: 0.1em;
+              font-weight: lighter;
+              padding-bottom: 1rem;
+            }
+          }
+
+          #__txt {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            p {
+              font-weight: bold;
+              justify-content: center;
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-size: 24px;
+              letter-spacing: 0.1em;
+            }
+          }
         }
       }
     }
+  }
+  .__footer {
+    width: 100%;
+    height: auto;
+    border: 3px solid yellow;
+    display: block;
   }
 }

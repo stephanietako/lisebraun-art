@@ -3,11 +3,7 @@
   height: 100%;
   position: relative;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   flex-direction: column;
-  background: silver;
-  border-radius: 19px;
 
   .__form_element {
     margin-top: 0.5rem;
@@ -36,12 +32,16 @@
   }
 
   button {
-    height: 3.2rem;
-    width: 8rem;
+    height: 4.2rem;
+    width: 14rem;
     font-size: 2rem;
     border-radius: 2rem;
     background: transparent;
     color: #fff;
-    margin-top: 1.2rem;
+    margin: 1.2rem auto;
+    cursor: pointer;
+    &:hover {
+      color: silver;
+    }
   }
 }
