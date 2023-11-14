@@ -55,7 +55,7 @@
           z-index: 4;
           p {
             font-size: 22px;
-            padding: 1rem;
+            padding: 2rem;
             line-height: 1.2;
             color: #fff;
           }
@@ -118,7 +118,7 @@
   .__footer {
     width: 100%;
     height: auto;
-    border: 3px solid yellow;
     display: block;
+    z-index: 3;
   }
 }
