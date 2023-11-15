@@ -45,7 +45,7 @@ const TextareaField = ({
   );
 };
 
-const Formulaire = () => {
+const Formulaire = ({ form }) => {
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -158,6 +158,7 @@ const Formulaire = () => {
 
   return (
     <>
+      {form}
       <form onSubmit={handleSubmit} className={styles.__container_form}>
         <div className={styles.__form_element}>
           <InputField
@@ -204,7 +205,7 @@ const Formulaire = () => {
       </form>
       <ToastContainer
         transition={Zoom}
-        position="top-right"
+        position="top-center"
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}

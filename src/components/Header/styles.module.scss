@@ -3,6 +3,7 @@
   width: 100%;
   height: auto;
   text-transform: capitalize;
+  z-index: 4;
 
   .__container {
     display: flex;
@@ -17,6 +18,11 @@
       height: auto;
       align-items: center;
 
+      button {
+        background: transparent;
+        border: none;
+      }
+
       li {
         font-size: 35px;
         text-decoration: none;
@@ -24,8 +30,9 @@
         color: #fff;
         cursor: pointer;
         padding: 33px;
+        background: transparent;
         &:hover {
-          color: #000;
+          color: silver;
         }
       }
     }
@@ -37,6 +44,7 @@
       align-items: center;
       width: 100%;
       justify-content: flex-end;
+      margin-right: 2rem;
 
       p {
         font-size: 35px;
@@ -48,7 +56,7 @@
         padding: 2rem;
         color: #fff;
         &:hover {
-          color: #000;
+          color: silver;
         }
       }
     }

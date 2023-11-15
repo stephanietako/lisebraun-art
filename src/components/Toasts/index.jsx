@@ -6,7 +6,7 @@ const notify = (message) => {
   toast(message, {
     transition: Zoom,
     hideProgressBar: true,
-    position: "top-right",
+    position: "top-center",
     autoClose: 5000,
     closeOnClick: true,
     pauseOnHover: true,

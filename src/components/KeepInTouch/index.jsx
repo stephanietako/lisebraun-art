@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { toast, ToastContainer, Zoom } from "../Toasts";
+// Styles
 import styles from "./styles.module.scss";
 
 const InputField = ({ name, label, value, onChange, error }) => {
@@ -54,7 +56,7 @@ const KeepInTouch = () => {
     if (validateForm()) {
       alert(`Email: ${formData.email}`);
     } else {
-      alert(
+      toast.error(
         "Le formulaire contient des erreurs. Veuillez corriger les champs."
       );
     }
@@ -73,6 +75,19 @@ const KeepInTouch = () => {
 
         <button type="submit">Submit</button>
       </form>
+      <ToastContainer
+        transition={Zoom}
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   );
 };
