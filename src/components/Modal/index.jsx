@@ -11,7 +11,7 @@ const Modal = ({ open, onClose, content, contentTxt }) => {
     if (content) {
       return <Formulaire form={true} />;
     } else if (contentTxt) {
-      return <HeaderTxt txts={true} />;
+      return <HeaderTxt txts={contentTxt} />;
     } else {
       return null;
     }
@@ -22,9 +22,9 @@ const Modal = ({ open, onClose, content, contentTxt }) => {
       {" "}
       <div className={styles.__modalContainer}>
         <div className={styles.__modal_content}>
-          <p onClick={onClose} className={styles.__closeBtn}>
-            x
-          </p>
+          <div onClick={onClose} className={styles.__closeBtn}>
+            <p>close</p>
+          </div>
           <div className={styles.__content}>{renderContentModal()}</div>
         </div>
       </div>
