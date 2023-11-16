@@ -31,8 +31,9 @@
         cursor: pointer;
         padding: 33px;
         background: transparent;
+        text-transform: capitalize;
         &:hover {
-          color: silver;
+          color: #000;
         }
       }
     }
@@ -56,7 +57,7 @@
         padding: 2rem;
         color: #fff;
         &:hover {
-          color: silver;
+          color: #000;
         }
       }
     }

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.scss";
 import backgroundImage from "../../assets/images/boueeHoriz.webp";
 
-const AnimCircle = () => {
+const AnimCircle = ({ backgroundFilter }) => {
   const canvasRef = useRef(null);
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
@@ -61,7 +61,7 @@ const AnimCircle = () => {
       canvas.removeEventListener("mousemove", handleMousemove);
       cancelAnimationFrame(animationFrame);
     };
-  }, [mouseX, mouseY, imageLoaded]);
+  }, [mouseX, mouseY, imageLoaded, backgroundFilter]);
 
   return (
     <div className={styles.anim}>

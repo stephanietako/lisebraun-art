@@ -4,8 +4,6 @@ import Footer from "../../components/Footer";
 import AnimCircle from "../../components/AnimCircle";
 import ArrowBtn from "../../components/ArrowBtn";
 import Modal from "../../components/Modal";
-// Assets
-import image from "../../assets/images/boueeHoriz.webp";
 import gif from "../../assets/gif/aqua.gif";
 // Styles
 import styles from "./styles.module.scss";
@@ -24,9 +22,6 @@ const Home = () => {
         />
         <div className={styles.__container}>
           <AnimCircle />
-          <div className={styles.__image}>
-            <img src={image} alt="woman on buoy in the swimming pool" />
-          </div>
         </div>
         <div className={styles.__section}>
           <div className={styles.__box}>

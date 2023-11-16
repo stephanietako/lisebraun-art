@@ -5,14 +5,20 @@ import styles from "./styles.module.scss";
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
-  const [showTxt] = useState(true);
+  const [selectedTxt, setSelectedTxt] = useState("");
 
   const instaURL = process.env.REACT_APP_INSTA_URL;
   const listItems = ["art", "design", "creation"];
 
-  const ListItem = ({ text, onClick }) => {
+  const ListItem = ({ text }) => {
     return (
-      <button className={styles.__txt_modal} onClick={onClick}>
+      <button
+        className={styles.__txt_modal}
+        onClick={() => {
+          setSelectedTxt(text);
+          setOpenModal(true);
+        }}
+      >
         <li>{text}</li>
       </button>
     );
@@ -23,14 +29,7 @@ const Header = () => {
       <div className={styles.__container}>
         <ul className={styles.__list_header}>
           {listItems.map((item) => (
-            <ListItem
-              key={item}
-              text={item}
-              onClick={(e) => {
-                e.preventDefault();
-                setOpenModal(true);
-              }}
-            />
+            <ListItem key={item} text={item} />
           ))}
         </ul>
         <div className={styles.__insta_link}>
@@ -41,7 +40,7 @@ const Header = () => {
         <Modal
           open={openModal}
           onClose={() => setOpenModal(false)}
-          contentTxt={showTxt}
+          contentTxt={selectedTxt}
         />
       </div>
     </div>
