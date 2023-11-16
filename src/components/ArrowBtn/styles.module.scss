@@ -16,9 +16,10 @@
     height: auto;
     width: auto;
     img {
-      width: 43px;
+      width: 37px;
       height: auto;
       object-fit: contain;
+      padding-top: 1.5rem;
     }
     &:hover {
       color: #dcdcdc;

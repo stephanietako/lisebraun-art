@@ -3,6 +3,7 @@
   width: 100%;
   height: 100vh;
   flex-direction: column;
+  color: rgb(21, 20, 20);
 
   .__container {
     display: block;
@@ -32,28 +33,29 @@
         flex-direction: column;
         margin-left: auto;
         padding: 2rem;
+        border: 3px solid yellow;
 
         .__txt {
-          width: 75%;
+          width: 55%;
           display: flex;
           margin-left: auto;
           z-index: 3;
           p {
-            font-size: 22px;
-            padding: 2rem;
+            font-size: 18px;
+            padding: 22px 0;
             line-height: 1.2;
             color: #fff;
           }
         }
 
         .__gif {
-          justify-content: center;
+          justify-content: flex-end;
           display: flex;
           width: 100%;
           height: auto;
           z-index: 3;
           img {
-            max-width: 93%;
+            max-width: 70%;
             height: auto;
             border-radius: 64px;
           }
@@ -61,7 +63,7 @@
 
         .__form_contact {
           display: flex;
-          width: 75%;
+          width: 58%;
           height: auto;
           color: #000;
           background: #dcdcdc;

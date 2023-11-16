@@ -28,13 +28,13 @@
       border-bottom: 0.1rem solid #e6e6e6;
       width: 90%;
       margin-bottom: 1rem;
-      font-size: 1.5rem;
+      font-size: 1rem;
       padding: 0.7rem 0;
       outline: none;
       background: transparent;
       &::placeholder {
         color: #fff;
-        font-size: 2rem;
+        font-size: 1rem;
       }
     }
 
@@ -43,9 +43,10 @@
       border-bottom: 0.1rem solid #e6e6e6;
       width: 90%;
       margin-bottom: 1rem;
-      font-size: 1.5rem;
+      font-size: 1rem;
       resize: none;
       outline: none;
+      color: red;
 
       &::placeholder {
         color: #000;
@@ -53,10 +54,11 @@
         text-align: left;
       }
     }
+
     button {
       height: 3.2rem;
-      width: 8rem;
-      font-size: 1.5rem;
+      width: 6rem;
+      font-size: 1rem;
       border-radius: 1rem;
       background: transparent;
       color: #fff;
