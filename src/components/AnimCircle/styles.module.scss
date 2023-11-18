@@ -1,5 +1,5 @@
 $backgroundImage: "../../assets/images/boueeHoriz.webp";
-$backgroundFilter: rgba(60, 57, 57, 0.75);
+$backgroundFilter: rgb(27 26 27 / 75%);
 
 .anim {
   display: flex;
@@ -7,10 +7,9 @@ $backgroundFilter: rgba(60, 57, 57, 0.75);
   height: auto;
 
   .__mask {
-    position: absolute;
+    height: 100vh;
     z-index: 2;
     width: 100%;
-    height: auto;
     background-image: url($backgroundImage);
     background-size: cover;
     background-position-y: 70%;

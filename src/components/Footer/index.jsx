@@ -5,9 +5,10 @@ import styles from "./styles.module.scss";
 import logo from "../../assets/logo/galerielisebraun.png";
 import KeepInTouch from "../KeepInTouch";
 
-const Footer = () => {
+const Footer = ({ setOpenModal }) => {
   const date = new Date();
   const currentYear = date.getFullYear();
+  const takodevURL = process.env.REACT_APP_TAKO_URL;
 
   return (
     <footer>
@@ -25,14 +26,34 @@ const Footer = () => {
           <Link to="terms">Mentions légales</Link>
         </li>
         <li>
-          <div className={styles.__copyright}>
-            &#169; Copyright {currentYear} | Tako Dev
+          {" "}
+          <span id={styles.__copyright}>
+            <p> &#169;Copyright {currentYear}</p>
+          </span>
+        </li>
+        <li>
+          <div className={styles.__link_tako}>
+            <a href={takodevURL} rel="noopener noreferrer">
+              <p>tako dev</p>
+            </a>
           </div>
         </li>
       </ul>
-      <div className={styles.__keepintch}>
+      <span id={styles.__contact}>
+        <button
+          className={styles.__arrow_modalBbtn}
+          onClick={(e) => {
+            e.preventDefault();
+            setOpenModal(true);
+          }}
+        >
+          {" "}
+          <p>drop a message</p>
+        </button>{" "}
+      </span>
+      <span id={styles.__keepintch}>
         <KeepInTouch />
-      </div>
+      </span>
     </footer>
   );
 };

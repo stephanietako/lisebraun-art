@@ -26,23 +26,25 @@
       display: flex;
       width: 100%;
       height: auto;
-      position: absolute;
+      position: relative;
 
       .__box_content {
-        width: 30%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin-left: auto;
         padding: 2rem;
+        border: 2px solid red;
 
         .__txt {
-          width: 55%;
+          width: 21%;
           display: flex;
           margin-left: auto;
           z-index: 3;
+          word-wrap: break-word;
           p {
             font-size: 18px;
-            padding: 22px 0;
+            padding: 1rem;
             line-height: 1.2;
             color: #fff;
           }
@@ -55,7 +57,7 @@
           height: auto;
           z-index: 3;
           img {
-            max-width: 70%;
+            width: 21rem;
             height: auto;
             border-radius: 64px;
           }
@@ -63,12 +65,12 @@
 
         .__form_contact {
           display: flex;
-          width: 58%;
+          width: 16rem;
           height: auto;
           color: #000;
           background: #dcdcdc;
           border: 1px solid gray;
-          border-radius: 57px;
+          border-radius: 39px;
           flex-direction: column;
           padding: 2rem;
           margin-left: auto;
@@ -80,7 +82,7 @@
               justify-content: center;
               font-family: "Poppins", sans-serif;
               font-style: normal;
-              font-size: 24px;
+              font-size: 20px;
               letter-spacing: 0.1em;
               font-weight: lighter;
               padding-bottom: 1rem;
@@ -96,7 +98,7 @@
               justify-content: center;
               font-family: "Poppins", sans-serif;
               font-style: normal;
-              font-size: 24px;
+              font-size: 18px;
               letter-spacing: 0.1em;
             }
           }

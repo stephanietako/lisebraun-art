@@ -5,6 +5,7 @@ import AnimCircle from "../../components/AnimCircle";
 import ArrowBtn from "../../components/ArrowBtn";
 import Modal from "../../components/Modal";
 import gif from "../../assets/gif/aqua.gif";
+
 // Styles
 import styles from "./styles.module.scss";
 
@@ -37,7 +38,7 @@ const Home = () => {
                   projects stories of human beings."
                 </p>
               </div>
-              <div className={styles.__form_contact}>
+              <div id={styles.form} className={styles.__form_contact}>
                 <span id={styles.__title}>
                   <p>Contact</p>
                 </span>
@@ -50,7 +51,7 @@ const Home = () => {
           </div>
         </div>
         <div className={styles.__footer}>
-          <Footer />
+          <Footer setOpenModal={setOpenModal} />
         </div>
       </div>
     </>

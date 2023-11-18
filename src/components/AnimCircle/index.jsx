@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
+// Styles
 import styles from "./styles.module.scss";
+// Assets
 import backgroundImage from "../../assets/images/boueeHoriz.webp";
 
 const AnimCircle = ({ backgroundFilter }) => {

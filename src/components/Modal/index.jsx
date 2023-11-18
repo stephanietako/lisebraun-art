@@ -1,6 +1,8 @@
 import React from "react";
 import Formulaire from "../../components/Formulaire";
 import HeaderTxt from "../../components/HeaderTxt";
+// Assets
+import backgroundImage from "../../assets/images/boueeHoriz.webp";
 // Styles
 import styles from "./styles.module.scss";
 
@@ -20,6 +22,11 @@ const Modal = ({ open, onClose, content, contentTxt }) => {
   return (
     <div className={styles.overlay}>
       {" "}
+      <img
+        id={styles.__bg}
+        src={backgroundImage}
+        alt={"woman to the simming pool"}
+      />{" "}
       <div className={styles.__modalContainer}>
         <div className={styles.__modal_content}>
           <div onClick={onClose} className={styles.__closeBtn}>

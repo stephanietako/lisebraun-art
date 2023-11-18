@@ -16,11 +16,16 @@
 
     .form-element {
       margin-top: 0.5rem;
-    }
-
-    label {
-      color: #fff;
-      font-size: 1.5rem;
+      &::placeholder {
+        color: #fff;
+        font-size: 2rem;
+        text-align: left;
+        font-size: medium;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+      }
     }
 
     input {
@@ -49,7 +54,7 @@
       color: red;
 
       &::placeholder {
-        color: #000;
+        color: #fff;
         font-size: 2rem;
         text-align: left;
       }

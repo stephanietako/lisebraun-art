@@ -86,24 +86,24 @@ const Formulaire = ({ form }) => {
     // Validez le firstname
     if (!validateFirstname(formData.firstname)) {
       newErrors.firstname =
-        "Le prénom n'est pas valide, il comporte moins de lettres et/ou des chiffres";
+        "The first name is not valid, it does not contain enough letters and/or numbers";
     }
 
     // Validez le lastname
     if (!validateLastname(formData.lastname)) {
       newErrors.lastname =
-        "Le nom n'est pas valide, il comporte moins de lettres et/ou des chiffres";
+        "The last name is not valid, it does not contain enough letters and/or numbers";
     }
 
     // Validez l'e-mail
     if (!validateEmail(formData.email)) {
-      newErrors.email = "Veuillez entrer une adresse e-mail valide";
+      newErrors.email = "Please enter a valid email address";
     }
 
     // Validez le message
     if (!validateMessage(formData.message)) {
       newErrors.message =
-        "Votre message doit comporter au moins 10 mots et pas plus de 1000";
+        "Your message must be at least 10 words and no more than 1000";
     }
 
     setErrors(newErrors);
@@ -128,11 +128,9 @@ const Formulaire = ({ form }) => {
       DOMPurify.sanitize(formData.email);
       DOMPurify.sanitize(formData.message);
 
-      toast.success("Formulaire envoyé !");
+      toast.success("Form sent !");
     } else {
-      toast.error(
-        "Le formulaire contient des erreurs. Veuillez corriger les champs."
-      );
+      toast.error("The form contains errors. Please correct the fields.");
     }
 
     try {
@@ -148,11 +146,11 @@ const Formulaire = ({ form }) => {
         console.log("Form sent successfully!");
       } else {
         console.error("Failed to send form.");
-        toast.error("Une erreur est survenue, essayez plus tard.");
+        toast.error("Failed to send form.");
       }
     } catch (error) {
       console.error("An error occurred:", error);
-      toast.error("Une erreur est survenue, essayez plus tard.");
+      toast.error("An error occurred.");
     }
   };
 
@@ -163,21 +161,22 @@ const Formulaire = ({ form }) => {
         <div className={styles.__form_element}>
           <InputField
             name="firstname"
-            label="Prénom"
+            label="
+            First Name"
             value={formData.firstname}
             onChange={handleChange}
             error={errors.firstname}
-            placeholder="Ton Prénom ici"
+            placeholder="Your first name here"
           />
         </div>
         <div className={styles.__form_element}>
           <InputField
             name="lastname"
-            label="Nom"
+            label="Last Name"
             value={formData.lastname}
             onChange={handleChange}
             error={errors.lastname}
-            placeholder="Ton Nom de Famille ici"
+            placeholder="Your last name here"
           />
         </div>
 
@@ -188,7 +187,7 @@ const Formulaire = ({ form }) => {
             value={formData.email}
             onChange={handleChange}
             error={errors.email}
-            placeholder="Ton e-mail ici"
+            placeholder="your email here"
           />
         </div>
         <div className={styles.__form_element}>
@@ -198,7 +197,7 @@ const Formulaire = ({ form }) => {
             value={formData.message}
             onChange={handleChange}
             error={errors.message}
-            placeholder="Ton message ici"
+            placeholder="Your message here"
           />
         </div>
         <button type="submit">Submit</button>

@@ -4,13 +4,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  color: #fff;
 
   .__form_element {
     margin-top: 0.5rem;
 
     label {
       display: block;
-      color: #fff;
+
       font-size: 2rem;
     }
 

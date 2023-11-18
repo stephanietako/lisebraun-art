@@ -5,29 +5,6 @@
   text-transform: capitalize;
   z-index: 4;
 
-  .__insta_link {
-    display: flex;
-    width: auto;
-    height: auto;
-    align-items: center;
-    width: 100%;
-    justify-content: flex-end;
-    margin-right: 2rem;
-
-    p {
-      font-size: 35px;
-      text-align: center;
-      justify-content: center;
-      font-family: "Poppins", sans-serif;
-      font-style: normal;
-      font-weight: bolder;
-      padding: 2rem;
-      color: #fff;
-      &:hover {
-        color: #000;
-      }
-    }
-  }
   .__container_desk {
     display: flex;
     width: 100%;
@@ -52,7 +29,7 @@
           list-style-type: none;
           color: #fff;
           cursor: pointer;
-          padding: 33px;
+          padding: 24px;
           background: transparent;
           text-transform: capitalize;
           &:hover {
@@ -133,9 +110,41 @@
       }
     }
   }
+  .__insta_link {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 2rem;
+
+    p {
+      font-size: 35px;
+      text-align: center;
+      justify-content: center;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: bolder;
+      padding: 2rem;
+      color: #fff;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
 }
 ///////////////////////// RESPONSIVE //////////////////////
 @media only screen and (min-width: 1024px) {
+  // .__insta_link {
+  //   p {
+  //     font-size: 23px;
+  //     color: red;
+  //     &:hover {
+  //       color: #000;
+  //     }
+  //   }
+  // }
   .__container_desk {
     display: flex !important;
     .__list_header {
@@ -151,7 +160,7 @@
   .__container_desk {
     display: none;
     .__list_header {
-      display: none !important;
+      display: none;
     }
   }
   .__container_mobile {
@@ -172,6 +181,11 @@
 }
 
 @media only screen and (max-width: 500px) {
+  // .__insta_link {
+  //   p {
+  //     font-size: 25px;
+  //   }
+  // }
   .__container_desk {
     display: none;
     .__list_header {
@@ -181,9 +195,26 @@
   .__container_mobile {
     display: flex;
   }
+  .___insta_link {
+    p {
+      font-size: 25px;
+      text-align: center;
+      justify-content: center;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: bolder;
+      padding: 2rem;
+      color: blui;
+    }
+  }
 }
 
 @media only screen and (max-width: 350px) {
+  .__insta_link {
+    p {
+      font-size: 25px;
+    }
+  }
   .__container_desk {
     display: none;
     .__list_header {

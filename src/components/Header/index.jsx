@@ -64,7 +64,7 @@ const Header = () => {
         </ul>
         {/* Lien Instagram */}
         <div className={styles.__insta_link}>
-          <a href={instaURL} target="_blank" rel="noopener noreferrer">
+          <a href={instaURL} rel="noopener noreferrer">
             <p>instagram</p>
           </a>
         </div>

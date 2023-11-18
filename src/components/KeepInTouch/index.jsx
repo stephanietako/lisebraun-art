@@ -3,17 +3,16 @@ import { toast, ToastContainer, Zoom } from "../Toasts";
 // Styles
 import styles from "./styles.module.scss";
 
-const InputField = ({ name, label, value, onChange, error }) => {
+const InputField = ({ name, value, onChange, error }) => {
   return (
     <div className={styles.__form_element}>
-      <label htmlFor={name}>{label}:</label>
       <input
         type="text"
         id={name}
         name={name}
         value={value}
         onChange={onChange}
-        placeholder={`Your ${label.toLowerCase()} here`}
+        placeholder={`Your ${name.toLowerCase()} here`}
       />
       {error && <div className={styles.error}>{error}</div>}
     </div>
