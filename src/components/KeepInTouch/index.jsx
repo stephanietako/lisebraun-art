@@ -62,15 +62,17 @@ const KeepInTouch = () => {
   };
 
   return (
-    <div className={styles.form}>
+    <>
       <form onSubmit={handleSubmit} className={styles.__container_form}>
-        <InputField
-          name="email"
-          label="Email"
-          value={formData.email}
-          onChange={handleChange}
-          error={errors.email}
-        />
+        <div className={styles.__form_element}>
+          <InputField
+            name="email"
+            label="Email"
+            value={formData.email}
+            onChange={handleChange}
+            error={errors.email}
+          />
+        </div>
 
         <button type="submit">Submit</button>
       </form>
@@ -87,7 +89,7 @@ const KeepInTouch = () => {
         pauseOnHover
         theme="dark"
       />
-    </div>
+    </>
   );
 };
 

@@ -10,11 +10,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const instaURL = process.env.REACT_APP_INSTA_URL;
   const listItems = ["art", "design", "creation"];
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1023);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 980);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1023);
+      setIsMobile(window.innerWidth < 980);
     };
     window.addEventListener("resize", handleResize);
     return () => {
