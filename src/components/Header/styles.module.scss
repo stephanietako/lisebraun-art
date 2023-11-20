@@ -1,3 +1,5 @@
+@import "../../style/scss-variables";
+
 .header {
   display: flex;
   width: 100%;
@@ -21,7 +23,6 @@
         background: transparent;
         border: none;
         outline: none;
-        border: 2px solid red;
 
         li {
           font-size: 35px;
@@ -46,28 +47,25 @@
     cursor: pointer;
     opacity: 1;
     display: flex;
-    border: 3px solid fuchsia;
 
     .__burger_btn {
       border: none;
       background: none;
       cursor: pointer;
       z-index: 4;
-      border: 3px solid red;
       display: block;
       height: auto;
       width: auto;
-
       align-items: flex-end;
       align-content: end;
       margin-left: auto;
       img {
-        width: 55px;
+        width: 46px;
+        padding: 5px;
       }
     }
 
     .__menu_mobile {
-      background-color: #fff;
       display: flex;
       border: none;
       align-items: center;
@@ -76,7 +74,7 @@
       right: 0;
       bottom: 0;
       width: 100%;
-      height: 100vh;
+      height: 100%;
       padding: 2rem;
       text-align: center;
       right: 0;
@@ -84,6 +82,7 @@
       border: 2px solid blue;
       text-decoration: none;
       list-style-type: none;
+      background-color: rgba(0, 0, 0, 0.9);
 
       .__listItem_mobile_btn {
         display: flex;
@@ -93,7 +92,6 @@
 
         li {
           text-transform: capitalize;
-          color: #000;
           font-size: 35px;
           text-decoration: none;
           list-style-type: none;
@@ -102,9 +100,8 @@
           padding: 33px;
           text-align: center;
           text-transform: capitalize;
-          color: #000;
           &:hover {
-            color: blue;
+            color: silver;
           }
         }
       }
@@ -118,9 +115,10 @@
     width: 100%;
     justify-content: flex-end;
     margin-right: 2rem;
+    cursor: pointer;
 
     p {
-      font-size: 35px;
+      font-size: 29px;
       text-align: center;
       justify-content: center;
       font-family: "Poppins", sans-serif;
@@ -129,11 +127,12 @@
       padding: 2rem;
       color: #fff;
       &:hover {
-        color: #000;
+        color: silver;
       }
     }
   }
 }
+
 ///////////////////////// RESPONSIVE //////////////////////
 @media only screen and (min-width: 1022px) {
   .__container_desk {
@@ -147,7 +146,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 990px) {
   .__container_desk {
     display: none !important;
     .__list_header {
@@ -172,14 +171,23 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .__container_desk {
-    display: none;
-    .__list_header {
+  .header {
+    .__container_desk {
       display: none;
+      .__list_header {
+        display: none;
+      }
     }
-  }
-  .__container_mobile {
-    display: flex;
+    .__container_mobile {
+      display: flex;
+    }
+    .__insta_link {
+      margin-right: 0;
+      p {
+        padding: 1rem;
+        font-size: 20px;
+      }
+    }
   }
 }
 

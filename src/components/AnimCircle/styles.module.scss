@@ -16,9 +16,22 @@
     canvas {
       background-color: $backgroundFilter;
       background-size: cover;
-      width: 100%;
+      width: auto;
       height: 100%;
       z-index: -1;
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .anim {
+    .__mask {
+      display: block;
+      background-position: 33%;
+      canvas {
+        display: block;
+      }
     }
   }
 }

@@ -27,3 +27,18 @@
     }
   }
 }
+
+///////////////////////// RESPONSIVE //////////////////////
+@media only screen and (max-width: 780px) {
+  .container {
+    justify-content: flex-end;
+    .__arrow_modalBbtn {
+      img {
+        width: 22px;
+        height: auto;
+        object-fit: contain;
+        padding-top: 1rem;
+      }
+    }
+  }
+}

@@ -14,13 +14,16 @@ footer {
     list-style-type: none;
     height: auto;
     width: auto;
-    border: 3px solid yellow;
-
+    height: 1rem;
     p {
       color: #fff;
       text-transform: uppercase;
       font-style: normal;
       font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      &:hover {
+        color: silver;
+      }
     }
 
     li {
@@ -36,9 +39,8 @@ footer {
         font-size: 0.8rem;
         font-style: normal;
         font-family: "Poppins", sans-serif;
-
         &:hover {
-          color: #000;
+          color: silver;
         }
       }
     }
@@ -51,7 +53,7 @@ footer {
   .__action_elements {
     display: flex;
     align-items: center;
-    width: auto;
+    width: 30%;
     height: auto;
     flex-wrap: wrap;
 
@@ -65,29 +67,33 @@ footer {
     #__contact {
       display: block;
       z-index: 4;
-      height: auto;
       justify-content: center;
       height: auto;
       padding: 1rem;
-      width: 20rem;
+      width: auto;
       text-align: center;
-      &:hover {
-        color: #000;
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-      }
+
       p {
-        font-size: 1rem;
+        border-bottom: 2px solid silver;
+        color: silver;
+        font-size: 24px;
         text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        &:hover {
+          color: #fff;
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);
+        }
       }
     }
 
     #__keepintch {
       display: flex;
-      width: auto;
+      width: 60%;
       height: auto;
     }
   }
@@ -95,10 +101,47 @@ footer {
 
 //////////////////////// RESPONSIVE ///////////////////////////////
 @media only screen and (max-width: 768px) {
-  .footer {
-    .__container {
+  footer {
+    ul {
+      p {
+        color: #fff;
+        text-transform: uppercase;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        font-size: 8px;
+      }
+
+      li {
+        padding: 0.3rem;
+        width: auto;
+        text-align: center;
+
+        .__logo {
+          width: auto;
+          max-height: 2rem;
+        }
+
+        a {
+          color: #fff;
+          font-size: 10px;
+          font-style: normal;
+          font-family: "Poppins", sans-serif;
+          display: flex;
+
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+    .__action_elements {
+      margin-left: auto;
       width: 100%;
-      justify-content: start;
+      #__contact {
+        p {
+          font-size: 14px;
+        }
+      }
     }
   }
 }

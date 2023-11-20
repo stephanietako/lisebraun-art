@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { toast, ToastContainer, Zoom } from "../Toasts";
+// Assets
+import arrow from "../../assets/icon/arrow-white.png";
 // Styles
 import styles from "./styles.module.scss";
 
@@ -12,7 +14,7 @@ const InputField = ({ name, value, onChange, error }) => {
         name={name}
         value={value}
         onChange={onChange}
-        placeholder={`Your ${name.toLowerCase()} here`}
+        placeholder={`Enter your ${name.toLowerCase()}`}
       />
       {error && <div className={styles.error}>{error}</div>}
     </div>
@@ -64,17 +66,18 @@ const KeepInTouch = () => {
   return (
     <>
       <form onSubmit={handleSubmit} className={styles.__container_form}>
-        <div className={styles.__form_element}>
-          <InputField
-            name="email"
-            label="Email"
-            value={formData.email}
-            onChange={handleChange}
-            error={errors.email}
-          />
-        </div>
+        <InputField
+          name="email"
+          label="Email"
+          value={formData.email}
+          onChange={handleChange}
+          error={errors.email}
+        />
 
-        <button type="submit">Submit</button>
+        <button type="submit">
+          {" "}
+          <img src={arrow} alt={"icon arrow to submit"}></img>
+        </button>
       </form>
       <ToastContainer
         transition={Zoom}

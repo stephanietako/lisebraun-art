@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Modal from "../../components/Modal";
 import menu from "../../assets/icon/menu.png";
 import cross from "../../assets/icon/cross.png";
+// Styles
 import styles from "./styles.module.scss";
 
 const Header = () => {
@@ -72,6 +73,11 @@ const Header = () => {
 
       {/* Mobile */}
       <div className={styles.__container_mobile}>
+        <div className={styles.__insta_link}>
+          <a href={instaURL} rel="noopener noreferrer">
+            <p>instagram</p>
+          </a>
+        </div>
         <button className={styles.__burger_btn} onClick={toggleMenu}>
           <img src={isOpen ? cross : menu} alt={isOpen ? "Menu" : "Cross"} />
         </button>
