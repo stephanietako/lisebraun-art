@@ -9,6 +9,7 @@
   .__form_element {
     margin-top: 0.5rem;
     font-size: 22px;
+    background-color: transparent;
 
     label {
       display: block;
@@ -24,12 +25,13 @@
       font-size: 2rem;
       padding: 0.9rem 0;
       outline: none;
-      background: transparent;
+      background-color: transparent;
       color: #fff;
       &::placeholder {
         color: #fff;
         font-size: 2rem;
-        background-color: transparent;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
       }
     }
   }
