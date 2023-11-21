@@ -77,9 +77,7 @@
       height: 100%;
       padding: 2rem;
       text-align: center;
-      right: 0;
       z-index: 3;
-      border: 2px solid blue;
       text-decoration: none;
       list-style-type: none;
       background-color: rgba(0, 0, 0, 0.9);
@@ -97,7 +95,6 @@
           list-style-type: none;
           color: #fff;
           cursor: pointer;
-          padding: 33px;
           text-align: center;
           text-transform: capitalize;
           &:hover {

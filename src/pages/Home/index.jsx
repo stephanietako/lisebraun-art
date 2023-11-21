@@ -5,7 +5,6 @@ import AnimCircle from "../../components/AnimCircle";
 import ArrowBtn from "../../components/ArrowBtn";
 import Modal from "../../components/Modal";
 import gif from "../../assets/gif/aqua.gif";
-
 // Styles
 import styles from "./styles.module.scss";
 

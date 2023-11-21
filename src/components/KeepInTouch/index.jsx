@@ -14,7 +14,7 @@ const InputField = ({ name, value, onChange, error }) => {
         name={name}
         value={value}
         onChange={onChange}
-        placeholder={`Enter your ${name.toLowerCase()}`}
+        placeholder={`Enter your ${name.toLowerCase()} here`}
       />
       {error && <div className={styles.error}>{error}</div>}
     </div>
@@ -43,7 +43,7 @@ const KeepInTouch = () => {
 
     // Validez l'e-mail
     if (!validateEmail(formData.email)) {
-      newErrors.email = "L'e-mail n'est pas valide";
+      newErrors.email = "Please enter a valid email address";
     }
 
     setErrors(newErrors);
@@ -57,9 +57,7 @@ const KeepInTouch = () => {
     if (validateForm()) {
       alert(`Email: ${formData.email}`);
     } else {
-      toast.error(
-        "Le formulaire contient des erreurs. Veuillez corriger les champs."
-      );
+      toast.error("An error occurred. Please enter a valid email address");
     }
   };
 

@@ -1,23 +1,10 @@
-/* toastStyles.css */
-
-/* Ajouter des styles par défaut pour les toasts */
 .Toastify__toast {
   font-size: 16px;
   max-width: 350px; /* Taille maximale par défaut */
 }
-
-/* Styles spécifiques à une résolution inférieure à 600 pixels */
+/* //////////////////////// RESPONSIVE /////////////////////////////// */
 @media (max-width: 600px) {
   .Toastify__toast {
     max-width: 200px;
   }
 }
-
-/* Styles spécifiques à une résolution comprise entre 601 et 900 pixels */
-/* @media (min-width: 601px) and (max-width: 900px) {
-  .Toastify__toast {
-    max-width: 350px;
-  }
-} */
-
-/* Ajoutez d'autres règles de média queries au besoin */

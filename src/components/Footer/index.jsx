@@ -51,7 +51,7 @@ const Footer = ({ setOpenModal }) => {
             }}
           >
             {" "}
-            <p>contact me</p>
+            <p>contact me here</p>
           </button>{" "}
         </span>
 
