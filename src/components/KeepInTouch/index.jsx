@@ -79,8 +79,8 @@ const KeepInTouch = () => {
       </form>
       <ToastContainer
         transition={Zoom}
-        position="top-center"
-        autoClose={5000}
+        position="bottom-right"
+        autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
@@ -89,6 +89,7 @@ const KeepInTouch = () => {
         draggable
         pauseOnHover
         theme="dark"
+        className="toast_container"
       />
     </>
   );

@@ -214,6 +214,7 @@ const Formulaire = ({ form }) => {
         draggable
         pauseOnHover
         theme="dark"
+        className="toast_container"
       />
     </>
   );

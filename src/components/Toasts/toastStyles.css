@@ -1,10 +1,14 @@
-.Toastify__toast {
-  font-size: 16px;
-  max-width: 350px; /* Taille maximale par défaut */
+.toast_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  position: absolute;
 }
+
 /* //////////////////////// RESPONSIVE /////////////////////////////// */
 @media (max-width: 600px) {
-  .Toastify__toast {
-    max-width: 200px;
+  .toast_container {
+    max-width: 195px;
+    font-size: 12px;
   }
 }

@@ -49,3 +49,31 @@
     }
   }
 }
+
+///////////////////////// RESPONSIVE //////////////////////
+@media only screen and (max-width: 600px) {
+  .__container_form {
+    .__form_element {
+      font-size: 14px;
+      label {
+        font-size: 1rem;
+      }
+      input,
+      textarea {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        &::placeholder {
+          color: #fff;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    button {
+      height: 2.2rem;
+      width: 6rem;
+      font-size: 1rem;
+      border-radius: 1rem;
+    }
+  }
+}
