@@ -55,7 +55,7 @@ const KeepInTouch = () => {
     event.preventDefault();
 
     if (validateForm()) {
-      alert(`Email: ${formData.email}`);
+      toast.success("Email envoyé !");
     } else {
       toast.error("An error occurred. Please enter a valid email address");
     }
