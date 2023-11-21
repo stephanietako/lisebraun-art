@@ -13,7 +13,7 @@ const AnimCircle = ({ backgroundFilter }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 780) {
+      if (window.innerWidth <= 1200) {
         setIsVisible(false);
       } else {
         setIsVisible(true);

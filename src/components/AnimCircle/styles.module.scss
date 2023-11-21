@@ -24,7 +24,32 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+//////////////////////// RESPONSIVE ///////////////////////////////
+
+@media only screen and (max-width: 1200px) {
+  .anim {
+    .__mask {
+      display: block;
+      background-position: 33%;
+      canvas {
+        display: block;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 820px) {
+  .anim {
+    .__mask {
+      display: block;
+      background-position: 39%;
+      canvas {
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
   .anim {
     .__mask {
       display: block;

@@ -25,7 +25,7 @@ const Modal = ({ open, onClose, content, contentTxt }) => {
       <img
         id={styles.__bg}
         src={backgroundImage}
-        alt={"woman to the simming pool"}
+        alt={"woman to the swimming pool"}
       />{" "}
       <div className={styles.__modalContainer}>
         <div className={styles.__modal_content}>

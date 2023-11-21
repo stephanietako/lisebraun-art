@@ -20,6 +20,16 @@ const App = () => {
               )
             }
           />
+          <Route
+            path="/home"
+            element={
+              JSON.parse(process.env.REACT_APP_MODE_MAINTENANCE) ? (
+                <Maintenance />
+              ) : (
+                <Home />
+              )
+            }
+          />
         </Routes>
       </Router>
     </div>

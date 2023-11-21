@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 // Styles
 import styles from "./styles.module.scss";
 // Assets
-import logo from "../../assets/logo/logolb.png";
+import logo from "../../assets/logo/test.png";
 import KeepInTouch from "../KeepInTouch";
 
 const Footer = ({ setOpenModal }) => {
@@ -14,16 +14,9 @@ const Footer = ({ setOpenModal }) => {
     <footer>
       <ul>
         <li>
-          <a href="#welcome">
-            <img
-              className={styles.__logo}
-              src={logo}
-              alt="lise Braun art logo"
-            />
-          </a>
-        </li>
-        <li>
-          <p>lise braun galerie</p>
+          <div className={styles.__logo}>
+            <img src={logo} alt="lise Braun art gallery logo" />
+          </div>
         </li>
         <li>
           <Link to="terms">Mentions légales</Link>

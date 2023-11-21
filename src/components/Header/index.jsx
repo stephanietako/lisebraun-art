@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Modal from "../../components/Modal";
-import menu from "../../assets/icon/menu.png";
-import cross from "../../assets/icon/cross.png";
 // Styles
 import styles from "./styles.module.scss";
+// Assets
+import menu from "../../assets/icon/menu.png";
+import cross from "../../assets/icon/cross.png";
+import logoDesk from "../../assets/logo/test.png";
+import logoMobile from "../../assets/logo/logolb.png";
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -46,16 +49,25 @@ const Header = () => {
     </div>
   );
 
-  // Fonction pour basculer l'état du menu mobile entre ouvert et fermé
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <div className={styles.header}>
+      <a href="/">
+        <div className={styles.__logo}>
+          <img
+            src={isMobile ? logoMobile : logoDesk}
+            alt="lise Braun art gallery logo"
+          />
+        </div>
+      </a>
+
       {/* Appel de l'import Modal*/}
       <Modal
         open={openModal}
         onClose={() => setOpenModal(false)}
         contentTxt={selectedTxt}
+        listItems={listItems}
       />
 
       {/* Desktop */}
