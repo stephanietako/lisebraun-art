@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 // Assets
 import menu from "../../assets/icon/menu.png";
 import cross from "../../assets/icon/cross.png";
-import logoDesk from "../../assets/logo/test.png";
+import logoDesk from "../../assets/logo/gblwhite.png";
 import logoMobile from "../../assets/logo/logolb.png";
 
 const Header = () => {
