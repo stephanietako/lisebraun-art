@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 // Assets
 import backgroundImage from "../../assets/images/boueeHoriz.webp";
 
-const AnimCircle = ({ backgroundFilter }) => {
+const AnimCircle = ({ img, mask, width }) => {
   const [isVisible, setIsVisible] = useState(true);
   const canvasRef = useRef(null);
   const [mouseX, setMouseX] = useState(0);
@@ -20,7 +20,7 @@ const AnimCircle = ({ backgroundFilter }) => {
       }
     };
 
-    handleResize(); // Vérifier la visibilité au chargement initial
+    handleResize();
 
     window.addEventListener("resize", handleResize);
 
@@ -35,14 +35,15 @@ const AnimCircle = ({ backgroundFilter }) => {
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-
+    // Load
     const img = new Image();
     img.src = backgroundImage;
     img.onload = () => {
       setImageLoaded(true);
+      drawCircle();
     };
 
-    const drawCircle = () => {
+    const drawCircle = async () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       if (isVisible) {
@@ -50,19 +51,24 @@ const AnimCircle = ({ backgroundFilter }) => {
         ctx.beginPath();
         ctx.arc(mouseX, mouseY, radius, 0, 2 * Math.PI);
         ctx.clip();
-        if (imageLoaded) {
-          const scaleWidth = canvas.width / img.width;
-          const scaleHeight = canvas.height / img.height;
-          const scale = Math.max(scaleWidth, scaleHeight);
 
-          const imageWidth = img.width * scale;
-          const imageHeight = img.height * scale;
-
-          const imageX = (canvas.width - imageWidth) * 0.7;
-          const imageY = (canvas.height - imageHeight) * 0.7;
-
-          ctx.drawImage(img, imageX, imageY, imageWidth, imageHeight);
+        // Await image loading before drawing
+        if (!imageLoaded) {
+          await img.onload;
+          setImageLoaded(true);
         }
+
+        const scaleWidth = canvas.width / img.width;
+        const scaleHeight = canvas.height / img.height;
+        const scale = Math.max(scaleWidth, scaleHeight);
+
+        const imageWidth = img.width * scale;
+        const imageHeight = img.height * scale;
+
+        const imageX = (canvas.width - imageWidth) * 0.7;
+        const imageY = (canvas.height - imageHeight) * 0.7;
+
+        ctx.drawImage(img, imageX, imageY, imageWidth, imageHeight);
 
         ctx.closePath();
       }
@@ -82,7 +88,7 @@ const AnimCircle = ({ backgroundFilter }) => {
       canvas.removeEventListener("mousemove", handleMousemove);
       cancelAnimationFrame(animationFrame);
     };
-  }, [mouseX, mouseY, imageLoaded, backgroundFilter, isVisible]);
+  }, [mouseX, mouseY, imageLoaded, isVisible]);
 
   return (
     <div className={styles.anim}>

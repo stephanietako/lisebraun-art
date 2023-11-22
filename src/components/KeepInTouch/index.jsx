@@ -79,7 +79,7 @@ const KeepInTouch = () => {
       </form>
       <ToastContainer
         transition={Zoom}
-        position="bottom-right"
+        position="bottom-left"
         autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
