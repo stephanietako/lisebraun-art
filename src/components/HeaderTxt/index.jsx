@@ -9,6 +9,7 @@ const HeaderTxt = ({ txts }) => {
         title: "art",
         paragraph:
           "I opened my first gallery at the age of 20, while studying interior design. Since then, I've been promoting emerging and established artists, both in and out of the gallery. We are present at various international contemporary art fairs. My unique guiding principle: the passion and close relationship I have with my artists.",
+        cite: "- Lise Braun art",
       },
     ],
     design: [
@@ -16,13 +17,15 @@ const HeaderTxt = ({ txts }) => {
         title: "design",
         paragraph:
           "In France, I have represented prestigious design editors such as Vitra, Cappellini, Agape, Roda and Bitossi. This encouraged me to produce art objects in ultra-limited series.",
+        cite: "- Lise Braun art",
       },
     ],
-    creation: [
+    curation: [
       {
-        title: "creation",
+        title: "curation",
         paragraph:
           "I love artistic research and inventing concepts and bridges between the arts. I regularly organize exhibitions for companies and institutions. We've linked contemporary art, perfume, haiku, Formula 1 objects and, of course, digital art. I'm an early member of Blockchain Innov.",
+        cite: "- Lise Braun art",
       },
     ],
   };
@@ -34,8 +37,13 @@ const HeaderTxt = ({ txts }) => {
       <ul>
         {content.map((item, index) => (
           <li key={index}>
-            <h1>{item.title}</h1>
-            <p>{item.paragraph}</p>
+            <blockquote>
+              <h1>{item.title}</h1>
+              <p>{item.paragraph}</p>
+              <footer>
+                <cite>{item.cite}</cite>
+              </footer>
+            </blockquote>
           </li>
         ))}
       </ul>

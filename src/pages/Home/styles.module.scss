@@ -34,16 +34,27 @@
         padding: 2rem;
 
         .__txt {
-          width: 14%;
+          width: 15%;
           display: flex;
           margin-left: auto;
           z-index: 3;
           word-wrap: break-word;
-          p {
-            font-size: 18px;
-            padding: 1rem;
-            line-height: 1.2;
-            color: #fff;
+
+          blockquote {
+            display: block;
+            padding: 1.5rem 0;
+            p {
+              font-size: 18px;
+              line-height: 1.2;
+              color: #fff;
+            }
+            cite {
+              color: silver;
+              text-align-last: end;
+              width: 100%;
+              height: auto;
+              padding: 0.5rem 1rem;
+            }
           }
         }
 

@@ -6,14 +6,14 @@ import styles from "./styles.module.scss";
 import menu from "../../assets/icon/menu.png";
 import cross from "../../assets/icon/cross.png";
 import logoDesk from "../../assets/logo/gblwhite.png";
-import logoMobile from "../../assets/logo/logolb.png";
+import logoMobile from "../../assets/logo/logolbwhite.png";
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
   const [selectedTxt, setSelectedTxt] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const instaURL = process.env.REACT_APP_INSTA_URL;
-  const listItems = ["art", "design", "creation"];
+  const listItems = ["art", "design", "curation"];
   const [isMobile, setIsMobile] = useState(window.innerWidth < 980);
 
   useEffect(() => {

@@ -26,6 +26,9 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
+      <div className={styles.__container}>
+        <AnimCircle />
+      </div>
       {loading ? (
         <LoaderSpinner />
       ) : (
@@ -36,9 +39,7 @@ const Home = () => {
             onClose={() => setOpenModal(false)}
             content={showContent}
           />
-          <div className={styles.__container}>
-            <AnimCircle />
-          </div>
+
           <div className={styles.__section}>
             <div className={styles.__box}>
               <div className={styles.__box_content}>
@@ -46,12 +47,17 @@ const Home = () => {
                   <img src={gif} alt="event aqua art miami " />
                 </div>
                 <div className={styles.__txt}>
-                  <p>
-                    "I want to continue promoting arts and special pieces
-                    internationally, meet a growing demand for high-quality and
-                    rare products, build a collection based on encounters,
-                    project stories of human beings."
-                  </p>
+                  <blockquote>
+                    <p>
+                      "I want to continue promoting arts and special pieces
+                      internationally, meet a growing demand for high-quality
+                      and rare products, build a collection based on encounters,
+                      project stories of human beings."
+                    </p>
+                    <footer>
+                      <cite>- Lise Braun art</cite>
+                    </footer>
+                  </blockquote>
                 </div>
                 <div id={styles.form} className={styles.__form_contact}>
                   <span id={styles.__title}>

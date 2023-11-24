@@ -35,7 +35,7 @@ const AnimCircle = ({ img, mask, width }) => {
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    // Load
+    // Load image & circle mask with drawCircle() bg inside
     const img = new Image();
     img.src = backgroundImage;
     img.onload = () => {

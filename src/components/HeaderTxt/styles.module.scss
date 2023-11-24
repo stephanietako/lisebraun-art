@@ -8,17 +8,31 @@
     list-style-type: none;
 
     li {
-      h1 {
-        font-size: 7rem;
-        padding: 2rem;
-        text-align: center;
-        color: #999797;
-      }
+      blockquote {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+        border: 2px solid red;
+        display: block;
+        h1 {
+          font-size: 7rem;
+          padding: 2rem;
+          text-align: center;
+          color: #999797;
+        }
 
-      p {
-        color: #fff;
-        font-size: 18px;
-        line-height: 1.3;
+        p {
+          color: #fff;
+          font-size: 18px;
+          line-height: 1.3;
+        }
+        cite {
+          color: silver;
+          text-align-last: end;
+          width: 100%;
+          height: auto;
+          padding-top: 0.5rem;
+        }
       }
     }
   }

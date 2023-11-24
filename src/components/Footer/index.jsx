@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 // Styles
 import styles from "./styles.module.scss";
 // Assets
-import logo from "../../assets/logo/gblwhite.png";
+import logo from "../../assets/logo/logolbwhite.png";
 import KeepInTouch from "../KeepInTouch";
 
 const Footer = ({ setOpenModal }) => {
