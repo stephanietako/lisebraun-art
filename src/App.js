@@ -22,16 +22,6 @@ const App = () => {
               )
             }
           />
-          <Route
-            path="/home"
-            element={
-              JSON.parse(process.env.REACT_APP_MODE_MAINTENANCE) ? (
-                <Maintenance />
-              ) : (
-                <Home />
-              )
-            }
-          />
           <Route path="/terms" element={<MentionsLegales />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
