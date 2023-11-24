@@ -45,13 +45,12 @@
     height: 100%;
     padding: 1rem;
     ul {
-      list-style-type: none;
+      padding-top: 2rem;
       li {
         blockquote {
           width: 100%;
           height: auto;
           padding-top: 1rem;
-          border: 2px solid red;
           display: block;
           h1 {
             font-size: 2rem;
@@ -70,13 +69,11 @@
     height: 100%;
     padding: 1rem;
     ul {
-      list-style-type: none;
+      padding-top: 5rem;
       li {
         blockquote {
           width: 100%;
           height: auto;
-          padding-top: &rem;
-          border: 2px solid red;
           display: block;
           h1 {
             font-size: 2rem;
