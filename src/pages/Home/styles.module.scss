@@ -119,7 +119,7 @@
     height: auto;
     display: block;
     z-index: 2;
-    padding: 0.5rem;
+    padding: 1.5rem;
   }
 }
 ///////////////////////// RESPONSIVE //////////////////////
@@ -141,7 +141,6 @@
             width: 100%;
             p {
               font-size: 16px;
-              padding: 2rem;
             }
           }
 
@@ -172,6 +171,9 @@
           }
         }
       }
+    }
+    .__footer {
+      padding: 0.5rem;
     }
   }
 }

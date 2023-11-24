@@ -61,7 +61,7 @@ footer {
   .__action_elements {
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 40%;
     height: auto;
     flex-wrap: wrap;
     margin-left: auto;
@@ -77,9 +77,7 @@ footer {
       display: block;
       z-index: 4;
       justify-content: center;
-      height: auto;
-      padding: 0.5rem;
-      width: auto;
+      padding: 1.5rem;
       text-align: center;
       width: 40%;
       height: auto;
@@ -126,11 +124,10 @@ footer {
         width: auto;
         text-align: center;
         .__logo {
-          display: flex;
-          width: 7rem;
-          object-fit: contain;
+          width: 3rem;
           height: 2rem;
         }
+
         a {
           color: #fff;
           font-size: 10px;
@@ -147,6 +144,30 @@ footer {
       margin-left: auto;
       width: 100%;
       #__contact {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    ul {
+      li {
+        .__logo {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+    }
+    .__action_elements {
+      margin-left: auto;
+      width: 100%;
+      height: auto;
+      #__contact {
+        padding: 0;
         p {
           font-size: 14px;
         }
