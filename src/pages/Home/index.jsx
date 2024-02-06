@@ -5,7 +5,6 @@ import Footer from "../../components/Footer";
 import AnimCircle from "../../components/AnimCircle";
 import ArrowBtn from "../../components/ArrowBtn";
 import Modal from "../../components/Modal";
-import gif from "../../assets/gif/aqua.gif";
 // Styles
 import styles from "./styles.module.scss";
 
@@ -43,9 +42,6 @@ const Home = () => {
           <div className={styles.__section}>
             <div className={styles.__box}>
               <div className={styles.__box_content}>
-                <div className={styles.__gif}>
-                  <img src={gif} alt="event aqua art miami " />
-                </div>
                 <div className={styles.__txt}>
                   <blockquote>
                     <p>
