@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import LoaderSpinner from "../../components/LoaderSpinner";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import AnimCircle from "../../components/AnimCircle";
-import ArrowBtn from "../../components/ArrowBtn";
+//import AnimCircle from "../../components/AnimCircle";
+//import ArrowBtn from "../../components/ArrowBtn";
 import Modal from "../../components/Modal";
 // Styles
 import styles from "./styles.module.scss";
+import ThreeCompt from "../../components/ThreeCompt";
 
 const Home = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -26,8 +27,9 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <div className={styles.__container}>
-        <AnimCircle />
+        <ThreeCompt />
       </div>
+      {/* <AnimCircle /> */}
       {loading ? (
         <LoaderSpinner />
       ) : (
@@ -55,7 +57,7 @@ const Home = () => {
                     </footer>
                   </blockquote>
                 </div>
-                <div id={styles.form} className={styles.__form_contact}>
+                {/* <div id={styles.form} className={styles.__form_contact}>
                   <span id={styles.__title}>
                     <p>Contact</p>
                   </span>
@@ -63,7 +65,7 @@ const Home = () => {
                     <p>Drop a message</p>
                     <ArrowBtn setOpenModal={setOpenModal} />
                   </span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

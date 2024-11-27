@@ -25,6 +25,7 @@
       display: flex;
       width: 100%;
       height: auto;
+      border: 19px solid yellow;
 
       .__box_content {
         width: 100%;
@@ -42,6 +43,8 @@
           margin-left: auto;
           z-index: 3;
           word-wrap: break-word;
+          border: 12px solid rgb(255, 0, 174);
+          background: turquoise;
 
           blockquote {
             display: block;
@@ -61,7 +64,7 @@
           }
         }
 
-        .__form_contact {
+        .__ {
           display: flex;
           width: 16rem;
           height: auto;
@@ -143,7 +146,7 @@
             }
           }
 
-          .__form_contact {
+          .__ {
             width: 12rem;
             padding: 1rem;
             margin: 0;
