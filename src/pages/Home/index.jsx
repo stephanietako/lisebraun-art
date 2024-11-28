@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import LoaderSpinner from "../../components/LoaderSpinner";
 import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+//import Footer from "../../components/Footer";
 //import AnimCircle from "../../components/AnimCircle";
 //import ArrowBtn from "../../components/ArrowBtn";
 import Modal from "../../components/Modal";
 // Styles
 import styles from "./styles.module.scss";
 import ThreeCompt from "../../components/ThreeCompt";
+import InstagramRecentPost from "../../components/InstagramRecentPost";
 
 const Home = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -26,9 +27,6 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
-      <div className={styles.__container}>
-        <ThreeCompt />
-      </div>
       {/* <AnimCircle /> */}
       {loading ? (
         <LoaderSpinner />
@@ -43,6 +41,9 @@ const Home = () => {
 
           <div className={styles.__section}>
             <div className={styles.__box}>
+              <div className={styles.__container}>
+                <ThreeCompt />
+              </div>
               <div className={styles.__box_content}>
                 <div className={styles.__txt}>
                   <blockquote>
@@ -69,9 +70,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className={styles.__footer}>
+          <InstagramRecentPost />
+          {/* <div className={styles.__footer}>
             <Footer setOpenModal={setOpenModal} />
-          </div>
+          </div> */}
         </>
       )}
     </div>

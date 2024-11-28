@@ -3,16 +3,20 @@
 .home {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   color: rgb(21, 20, 20);
+  position: relative;
 
   .__container {
-    display: block;
+    display: flex;
     height: 100%;
-    width: 100%;
+    width: 65rem;
     flex-direction: column;
     position: absolute;
+    align-items: center;
+    border: 7px solid red;
+    justify-content: center;
   }
 
   .__section {
@@ -24,8 +28,11 @@
     .__box {
       display: flex;
       width: 100%;
-      height: auto;
+      height: 100%;
       border: 19px solid yellow;
+      justify-content: center;
+      align-items: center;
+      position: relative;
 
       .__box_content {
         width: 100%;
@@ -36,6 +43,7 @@
         overflow: scroll;
         overflow-x: hidden;
         overflow-y: scroll;
+        border: 19px solid turquoise;
 
         .__txt {
           width: 15%;
