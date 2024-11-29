@@ -8,7 +8,7 @@ import Modal from "../../components/Modal";
 // Styles
 import styles from "./styles.module.scss";
 import ThreeCompt from "../../components/ThreeCompt";
-import InstagramRecentPost from "../../components/InstagramRecentPost";
+//import InstagramRecentPost from "../../components/InstagramRecentPost";
 
 const Home = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -70,7 +70,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <InstagramRecentPost />
+          {/* <InstagramRecentPost /> */}
           {/* <div className={styles.__footer}>
             <Footer setOpenModal={setOpenModal} />
           </div> */}

@@ -1,0 +1,46 @@
+.instagram_recent_post_media {
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  margin-top: 10vh;
+
+  p {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .__media {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    border: 3px solid gray;
+
+    img {
+      width: 400px;
+      height: 400px;
+      object-fit: contain;
+    }
+
+    video {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  .instagram_recent_post_media__caption {
+    text-align: center;
+
+    p {
+      font-size: 1rem;
+      color: blue;
+    }
+  }
+}

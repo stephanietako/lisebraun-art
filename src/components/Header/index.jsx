@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Modal from "../../components/Modal";
+import { Link } from "react-router-dom";
 // Styles
 import styles from "./styles.module.scss";
 // Assets
 import menu from "../../assets/icon/menu.png";
 import cross from "../../assets/icon/cross.png";
-import logoDesk from "../../assets/logo/gblwhite.png";
+import logoDesk from "../../assets/logo/galerielisebraun.png";
 import logoMobile from "../../assets/logo/logolbwhite.png";
 
 const Header = () => {
@@ -77,9 +78,9 @@ const Header = () => {
         </ul>
         {/* Lien Instagram */}
         <div className={styles.__insta_link}>
-          <a href={instaURL} rel="noopener noreferrer">
+          <Link to="/instagram">
             <p>instagram</p>
-          </a>
+          </Link>
         </div>
       </div>
 

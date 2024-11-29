@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from "./styles.module.scss"; // Importez le fichier SCSS
 
 const InstagramRecentPost = () => {
   const [post, setPost] = useState(null); // Contiendra les données du dernier post
@@ -41,70 +42,26 @@ const InstagramRecentPost = () => {
   }
 
   return (
-    <div
-      className="instagram_recent_post_media"
-      style={{
-        display: "flex",
-        width: "auto",
-        height: "auto",
-        alignItems: "center",
-        flexDirection: "column",
-        padding: "1rem",
-        justifyContent: "center",
-      }}
-    >
-      <p
-        style={{
-          display: "block",
-          marginBottom: "1rem",
-        }}
-      >
-        Découvrez notre dernière publication Instagram
-      </p>
-      <span
-        className="__media"
-        style={{
-          display: "flex",
-          width: "auto",
-          height: "auto",
-          alignItems: "center",
-          flexDirection: "column",
-          padding: "1rem",
-          justifyContent: "center",
-        }}
-      >
+    <div className={styles.instagram_recent_post_media}>
+      <h1>Galerie Lise Braun</h1>
+      <br />
+      <h2>Découvrez notre dernière publication Instagram</h2>
+      <br />
+      <span className={styles.__media}>
         <a href={post.permalink} target="_blank" rel="noopener noreferrer">
           {post.media_type === "IMAGE" ||
           post.media_type === "CAROUSEL_ALBUM" ? (
-            <img
-              width={400}
-              height={400}
-              src={post.media_url}
-              alt={post.caption}
-              style={{ objectFit: "contain" }}
-            />
+            <img src={post.media_url} alt={post.caption} />
           ) : post.media_type === "VIDEO" ? (
-            <video width={400} height={400} controls>
+            <video controls>
               <source src={post.media_url} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           ) : null}
         </a>
       </span>
-
-      <span
-        className="instagram_recent_post_media__caption"
-        style={{
-          textAlign: "center",
-        }}
-      >
-        <p
-          style={{
-            fontSize: "18px",
-          }}
-        >
-          {post.caption}
-        </p>
+      <span className={styles.instagram_recent_post_media__caption}>
+        <p>{post.caption}</p>
       </span>
     </div>
   );
