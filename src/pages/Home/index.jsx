@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LoaderSpinner from "../../components/LoaderSpinner";
 import Header from "../../components/Header";
-//import Footer from "../../components/Footer";
+import Footer from "../../components/Footer";
 //import AnimCircle from "../../components/AnimCircle";
 //import ArrowBtn from "../../components/ArrowBtn";
 import Modal from "../../components/Modal";
@@ -58,22 +58,13 @@ const Home = () => {
                     </footer>
                   </blockquote>
                 </div>
-                {/* <div id={styles.form} className={styles.__form_contact}>
-                  <span id={styles.__title}>
-                    <p>Contact</p>
-                  </span>
-                  <span id={styles.__txt}>
-                    <p>Drop a message</p>
-                    <ArrowBtn setOpenModal={setOpenModal} />
-                  </span>
-                </div> */}
               </div>
             </div>
           </div>
-          {/* <InstagramRecentPost /> */}
-          {/* <div className={styles.__footer}>
+
+          <div className={styles.__footer}>
             <Footer setOpenModal={setOpenModal} />
-          </div> */}
+          </div>
         </>
       )}
     </div>

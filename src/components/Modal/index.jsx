@@ -2,7 +2,7 @@ import React from "react";
 import Formulaire from "../../components/Formulaire";
 import HeaderTxt from "../../components/HeaderTxt";
 // Assets
-import backgroundImage from "../../assets/images/boueeHoriz.webp";
+import backgroundImage from "../../assets/images/miami1.webp";
 // Styles
 import styles from "./styles.module.scss";
 

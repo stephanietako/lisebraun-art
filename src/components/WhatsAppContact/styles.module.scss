@@ -1,0 +1,19 @@
+.contactContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.whatsappButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25d366; /* WhatsApp green color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.whatsappButton:hover {
+  background-color: #1ebea5; /* Slightly darker green on hover */
+}

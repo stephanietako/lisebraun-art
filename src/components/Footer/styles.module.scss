@@ -6,8 +6,6 @@ footer {
   bottom: 0;
   justify-content: space-between;
   align-items: center;
-  border: 7px solid greenyellow;
-  background: turquoise;
 
   ul {
     display: flex;
@@ -25,7 +23,7 @@ footer {
       font-family: "Poppins", sans-serif;
       font-size: 12px;
       &:hover {
-        color: #000;
+        color: gray;
       }
     }
 
@@ -50,7 +48,7 @@ footer {
         font-family: "Poppins", sans-serif;
         font-size: 12px;
         &:hover {
-          color: #000;
+          color: #fff;
         }
       }
     }
@@ -101,12 +99,12 @@ footer {
       }
     }
 
-    #__keepintch {
-      display: flex;
-      width: 60%;
-      height: auto;
-      padding: 0.5rem;
-    }
+    // #__keepintch {
+    //   display: flex;
+    //   width: 60%;
+    //   height: auto;
+    //   padding: 0.5rem;
+    // }
   }
 }
 

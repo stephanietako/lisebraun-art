@@ -3,13 +3,17 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 // Assets
 import logo from "../../assets/logo/logolbwhite.png";
-import KeepInTouch from "../KeepInTouch";
+//import KeepInTouch from "../KeepInTouch";
 
 const Footer = ({ setOpenModal }) => {
   const date = new Date();
   const currentYear = date.getFullYear();
   const takodevURL = process.env.REACT_APP_TAKO_URL;
 
+  const handleMailClick = (e) => {
+    e.preventDefault();
+    window.location.href = "mailto:lisebraunmail@gmail.com";
+  };
   return (
     <footer>
       <ul>
@@ -35,7 +39,7 @@ const Footer = ({ setOpenModal }) => {
         </li>
       </ul>
       <div className={styles.__action_elements}>
-        <span id={styles.__contact}>
+        {/* <span id={styles.__contact}>
           <button
             className={styles.__arrow_modalBbtn}
             onClick={(e) => {
@@ -46,11 +50,18 @@ const Footer = ({ setOpenModal }) => {
             {" "}
             <p>contact me here</p>
           </button>{" "}
+        </span> */}
+        <span id={styles.__contact}>
+          <button
+            className={styles.__arrow_modalBbtn}
+            onClick={handleMailClick}
+          >
+            <p>Contact me here</p>
+          </button>
         </span>
-
-        <span id={styles.__keepintch}>
+        {/* <span id={styles.__keepintch}>
           <KeepInTouch />
-        </span>
+        </span> */}
       </div>
     </footer>
   );

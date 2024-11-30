@@ -45,7 +45,7 @@ const InstagramRecentPost = () => {
     <div className={styles.instagram_recent_post_media}>
       <h1>Galerie Lise Braun</h1>
       <br />
-      <h2>Découvrez notre dernière publication Instagram</h2>
+      <h2>Stay updated with the latest post</h2>
       <br />
       <span className={styles.__media}>
         <a href={post.permalink} target="_blank" rel="noopener noreferrer">

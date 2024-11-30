@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Modal from "../../components/Modal";
 import { Link } from "react-router-dom";
+import WhatsAppContact from "../WhatsAppContact/WhatsAppContact";
 // Styles
 import styles from "./styles.module.scss";
 // Assets
 import menu from "../../assets/icon/menu.png";
 import cross from "../../assets/icon/cross.png";
-import logoDesk from "../../assets/logo/galerielisebraun.png";
+import logoDesk from "../../assets/logo/gblwhite.png";
 import logoMobile from "../../assets/logo/logolbwhite.png";
 
 const Header = () => {
@@ -76,6 +77,16 @@ const Header = () => {
         <ul className={styles.__menu_desk}>
           <ListItem listItems={listItems} />
         </ul>
+        <div
+          className={styles.__whatsapp}
+          style={{
+            display: "flex",
+            width: "100%",
+            justifyContent: "flex-end",
+          }}
+        >
+          <WhatsAppContact />
+        </div>
         {/* Lien Instagram */}
         <div className={styles.__insta_link}>
           <Link to="/instagram">

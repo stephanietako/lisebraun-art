@@ -1,19 +1,21 @@
 .canvas__container {
   display: flex;
-  // width: 65%;
-  width: 48%;
+  //width: 50%;
+  width: 87rem;
   height: 100%;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
-  border: 3px solid silver;
-  margin-bottom: 2rem;
+  //border: 3px solid silver;
+  margin-bottom: 1rem;
 
   .canvas {
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 64%;
+    height: 80vh;
     cursor: move;
     position: relative;
+    border: 2px solid silver;
+    margin-top: 3vh;
 
     &#canvas {
       display: flex;
@@ -25,6 +27,18 @@
 }
 
 /////////////////// RESPONSIVE /////////////////
+@media screen and (max-width: 1024px) {
+  .canvas__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    .canvas {
+      width: 100%;
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .canvas__container {
     display: flex;
@@ -32,5 +46,9 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    .canvas {
+      height: 60vh;
+      width: 100%;
+    }
   }
 }
