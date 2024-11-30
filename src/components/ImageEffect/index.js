@@ -32,26 +32,16 @@ const ImageEffect = () => {
 
   useFrame((state, delta) => {
     easing.damp3(
-      //   camera.position,
-      //   [
-      //     state.pointer.x / 2,
-      //     0.5 + state.pointer.y * 0.5, // Réduire l'effet vertical ici
-      //     7 + Math.atan(state.pointer.x / 0.5),
-      //   ],
-      //   1,
-      //   delta
-      // );
-      // camera.lookAt(new THREE.Vector3(0, 0, 0));
       camera.position,
       [
-        state.pointer.x * 2,
-        0.4 + state.pointer.y * 0.2,
-        5 + Math.atan(state.pointer.x / 2),
+        state.pointer.x * 0.2,
+        0.2 + state.pointer.y * 0.2,
+        8 + Math.atan(state.pointer.x / 2),
       ],
       1,
       delta
     );
-    camera.lookAt(new THREE.Vector3(0, 0, -3));
+    camera.lookAt(new THREE.Vector3(0, 0, -5));
     if (meshRef.current) {
       meshRef.current.rotation.x = THREE.MathUtils.lerp(
         meshRef.current.rotation.x,
@@ -60,7 +50,7 @@ const ImageEffect = () => {
       );
       meshRef.current.rotation.y = THREE.MathUtils.lerp(
         meshRef.current.rotation.y,
-        state.pointer.x * 0.2,
+        state.pointer.x * 0.1,
         0.1
       );
 
@@ -87,9 +77,9 @@ const ImageEffect = () => {
   }
 
   return (
-    <mesh ref={meshRef} scale={[1, 1, 1]} position={[0, 0, 0]}>
+    <mesh ref={meshRef} scale={[1, 1, 1]} position={[0, 0, 2]}>
       {/* Définition de la taille fixe pour le plan */}
-      <planeGeometry args={[12, 15]} />
+      <planeGeometry args={[21, 22]} />
       <meshBasicMaterial map={texture} />
     </mesh>
   );

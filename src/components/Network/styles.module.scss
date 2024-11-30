@@ -1,0 +1,12 @@
+.network {
+  display: flex;
+  justify-content: center;
+}
+
+/////////////////// RESPONSIVE /////////////////
+@media screen and (max-width: 400px) {
+  .network {
+    display: flex;
+    justify-content: center;
+  }
+}

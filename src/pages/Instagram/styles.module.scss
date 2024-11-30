@@ -1,9 +1,46 @@
 .insta_page__container {
   display: flex;
   width: 100%;
-  height: 100vh;
-  align-items: center;
+  height: 100%;
   background: rgb(21, 20, 20);
-  justify-content: center;
+}
+
+.insta_content {
+  display: flex;
+  width: 100%;
+  height: 100%;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+.insta_title {
+  color: silver;
+  margin-bottom: 1rem;
+}
+
+.insta_text {
+  color: white;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.insta_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+///////////////////////// RESPONSIVE //////////////////////
+
+@media only screen and (max-width: 980px) {
+  .insta_content {
+    padding: 1rem;
+    margin-top: 7rem;
+  }
 }

@@ -14,13 +14,13 @@ const Header = () => {
   const [openModal, setOpenModal] = useState(false);
   const [selectedTxt, setSelectedTxt] = useState("");
   const [isOpen, setIsOpen] = useState(false);
-  const instaURL = process.env.REACT_APP_INSTA_URL;
+  //const instaURL = process.env.REACT_APP_INSTA_URL;
   const listItems = ["art", "design", "curation"];
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 980);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1026);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 980);
+      setIsMobile(window.innerWidth < 1026);
     };
     window.addEventListener("resize", handleResize);
     return () => {
@@ -96,11 +96,22 @@ const Header = () => {
       </div>
 
       {/* Mobile */}
+
       <div className={styles.__container_mobile}>
+        <div
+          className={styles.__whatsapp}
+          style={{
+            display: "flex",
+            width: "100%",
+            justifyContent: "flex-end",
+          }}
+        >
+          <WhatsAppContact />
+        </div>
         <div className={styles.__insta_link}>
-          <a href={instaURL} rel="noopener noreferrer">
+          <Link to="/instagram">
             <p>instagram</p>
-          </a>
+          </Link>
         </div>
         <button className={styles.__burger_btn} onClick={toggleMenu}>
           <img src={isOpen ? cross : menu} alt={isOpen ? "Menu" : "Cross"} />
