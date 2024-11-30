@@ -42,6 +42,7 @@ const ImageEffect = () => {
       delta
     );
     camera.lookAt(new THREE.Vector3(0, 0, -5));
+
     if (meshRef.current) {
       meshRef.current.rotation.x = THREE.MathUtils.lerp(
         meshRef.current.rotation.x,
@@ -56,6 +57,10 @@ const ImageEffect = () => {
 
       // Ajustement de la taille du plan basé sur des valeurs fixes
       meshRef.current.scale.set(viewport.width / 7, viewport.height / 7, 1);
+
+      // Adjustement du plane pour fixer
+      meshRef.current.scale.set(1, 1, 0);
+
       // Mise à jour de la position précédente de la souris
       previousPointer.current.x = state.pointer.x;
       previousPointer.current.y = state.pointer.y;
@@ -79,7 +84,7 @@ const ImageEffect = () => {
   return (
     <mesh ref={meshRef} scale={[1, 1, 1]} position={[0, 0, 2]}>
       {/* Définition de la taille fixe pour le plan */}
-      <planeGeometry args={[21, 22]} />
+      <planeGeometry args={[10, 12]} />
       <meshBasicMaterial map={texture} />
     </mesh>
   );
