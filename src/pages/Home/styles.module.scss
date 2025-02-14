@@ -36,7 +36,7 @@
       }
 
       .__box_content {
-        width: auto;
+        width: 50%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -54,7 +54,7 @@
 
           blockquote {
             display: flex;
-            width: 44%;
+            width: 100%;
             padding: 1.5rem 0;
             justify-content: flex-end;
             background: rgb(21, 20, 20);
@@ -65,56 +65,16 @@
               line-height: 1.2;
               color: gray;
             }
+
             cite {
               color: silver;
               text-align-last: end;
               width: 100%;
               height: auto;
-              padding: 0.5rem 1rem;
+              // padding: 0.5rem 1rem;
             }
           }
         }
-
-        // .__ {
-        //   display: flex;
-        //   width: 16rem;
-        //   height: auto;
-        //   color: #000;
-        //   background: #dcdcdc;
-        //   border: 1px solid gray;
-        //   border-radius: 39px;
-        //   flex-direction: column;
-        //   padding: 2rem;
-        //   z-index: 3;
-        //   line-height: 1.5;
-        //   margin-left: auto;
-
-        //   #__title {
-        //     p {
-        //       justify-content: center;
-        //       font-family: "Poppins", sans-serif;
-        //       font-style: normal;
-        //       font-size: 20px;
-        //       letter-spacing: 0.1em;
-        //       font-weight: lighter;
-        //       padding-bottom: 1rem;
-        //     }
-        //   }
-
-        //   #__txt {
-        //     display: flex;
-        //     height: 100%;
-        //     width: 100%;
-        //     p {
-        //       font-weight: bold;
-        //       justify-content: center;
-        //       font-family: "Poppins", sans-serif;
-        //       font-style: normal;
-        //       font-size: 18px;
-        //       letter-spacing: 0.1em;
-        //     }
-        //   }
-        // }
       }
     }
   }

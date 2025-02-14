@@ -23,7 +23,7 @@ const Footer = ({ setOpenModal }) => {
           </div>
         </li>
         <li>
-          <Link to="terms">Terms</Link>
+          <Link to="/terms">Terms</Link>
         </li>
         <li>
           <span id={styles.__copyright}>

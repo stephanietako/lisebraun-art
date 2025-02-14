@@ -14,7 +14,7 @@ const ImageEffect = () => {
   // Utilisation de useLoader sans conditionnel
   const texture = useLoader(
     THREE.TextureLoader,
-    "assets/images/miami.webp",
+    "assets/images/stand.webp",
     undefined,
     (error) => {
       console.error("Erreur de chargement de la texture:", error);
@@ -36,7 +36,7 @@ const ImageEffect = () => {
       [
         state.pointer.x * 0.2,
         0.2 + state.pointer.y * 0.2,
-        8 + Math.atan(state.pointer.x / 2),
+        6 + Math.atan(state.pointer.x / 2),
       ],
       1,
       delta
@@ -84,7 +84,7 @@ const ImageEffect = () => {
   return (
     <mesh ref={meshRef} scale={[1, 1, 1]} position={[0, 0, 2]}>
       {/* Définition de la taille fixe pour le plan */}
-      <planeGeometry args={[10, 12]} />
+      <planeGeometry args={[18, 8]} />
       <meshBasicMaterial map={texture} />
     </mesh>
   );

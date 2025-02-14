@@ -3,11 +3,12 @@ import styles from "./styles.module.scss";
 const MentionsLegales = () => {
   return (
     <div className={styles.terms_section} id="terms">
-      <>
+      <div className={styles.terms}>
         <a href="/">
           <button className={styles.__btn_home}>Back</button>
         </a>
         <h2>TERMS</h2>
+
         <div className={styles.__container}>
           <p>
             {
@@ -15,7 +16,7 @@ const MentionsLegales = () => {
             }
           </p>
         </div>
-      </>
+      </div>
     </div>
   );
 };
