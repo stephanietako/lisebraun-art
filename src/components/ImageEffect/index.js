@@ -56,7 +56,7 @@ const ImageEffect = () => {
       );
 
       // Ajustement de la taille du plan basé sur des valeurs fixes
-      meshRef.current.scale.set(viewport.width / 7, viewport.height / 7, 1);
+      meshRef.current.scale.set(viewport.width / 9, viewport.height / 7, 1);
 
       // Adjustement du plane pour fixer
       meshRef.current.scale.set(1, 1, 0);
